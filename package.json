@@ -1,0 +1,14 @@
+{
+  "name": "hasura-cli-issue-18",
+  "version": "1.0.0",
+  "scripts": {
+    "repro": "hasura --project hasura migrate status",
+    "openbrowser": "dotenv -- cross-env-shell 'open-cli $HASURA_ENDPOINT'"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "dotenv-cli": "^3.1.0",
+    "hasura-cli": "^1.0.0-rc.1",
+    "open-cli": "^5.0.0"
+  }
+}
